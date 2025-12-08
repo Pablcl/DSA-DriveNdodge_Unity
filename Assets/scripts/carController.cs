@@ -17,6 +17,9 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    //correccion bug salirse carretera
+
 	position.x += Input.GetAxis ("Horizontal") * carSpeed * Time.deltaTime;
 	if(position.x>maxPos){
 		position.x=maxPos;
@@ -28,7 +31,7 @@ public class carController : MonoBehaviour
 }
 	
 	
-	transform.position = position;
+	transform.position = positionn;
         
     }
 }
