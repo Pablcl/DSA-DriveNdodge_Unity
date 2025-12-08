@@ -31,7 +31,7 @@ public class carController : MonoBehaviour
 }
 	
 	
-	transform.position = positionn;
+	transform.position = position;
         
     }
 }
