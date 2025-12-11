@@ -27,6 +27,18 @@ public class uiManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
+  public void Replay(){
+    Application.LoadLevel(Application.loadedLevel);
+    }
+
+    public void Menu(){
+
+    Application.LoadLevel("MenuScene");
+    }
+    public void Exit(){
+	Application.Quit ();
+    }
+
 
 }
 
